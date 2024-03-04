@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Card Hover and Flip Effect - Demo Coding</title>
+  <!-- Use font awesome cdn for brands -->
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white flex items-center justify-center min-h-screen p-8">
+  <div class="grid grid-cols-3 gap-8">
+    <div class="card">
+      <div class="inner-card relative font-inter text-white p-8 text-2xl leading-12 bg-black bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden transition duration-150 ease-out transform scale-100">
+        <div class="user-details flex flex-col justify-center items-center">
+          <div class="top-section bg-gradient-to-br from-pink-600 to-lime-300 py-2 px-4 rounded-t-lg absolute top-0 left-0 w-full z-10">
+          </div>
+        </div>
+        <div class="glare absolute top-0 left-0 w-full h-full opacity-0.6 bg-gradient-to-bl from-purple-300 to-transparent rounded-lg mix-blend-hard-light transition duration-100 ease-out"></div>
+        <div class="bottom-section bg-gradient-to-b from-[#028F81] to-[#004E57]w-full absolute bottom-0 left-0 py-16 text-center">
+            <div class="user-icon absolute top-[1%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-10">
+                <img src="https://folsom-pulse.vercel.app/_next/image?url=https%3A%2F%2Ffolsom-pulse-media.s3.us-west-1.amazonaws.com%2F1703934331827-Frame-2.png&w=256&q=75" />
+              </div>
+              <div class="py-6">
+          <h1 class="name text-3xl ">Fitness and Beauty</h1>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second Card -->
+    <div class="card">
+        <div class="inner-card-backface bg-gradient-to-tr from-indigo-900 to-purple-900 text-white p-8 rounded-lg absolute top-0 left-0 w-full h-full transition duration-150 ease-out transform scale-101">
+         
+        </div>
+        <div class="inner-card relative font-inter text-white p-8 text-2xl leading-12 bg-black bg-center bg-no-repeat bg-cover rounded-lg overflow-hidden transition duration-150 ease-out transform scale-100">
+          <div class="user-details flex flex-col justify-center items-center">
+            <div class="top-section bg-gradient-to-br from-pink-600 to-lime-300 py-2 px-4 rounded-t-lg absolute top-0 left-0 w-full z-10">
+              <h1 class="flip">Folsom Pulse</h1>
+            </div>
+          </div>
+          <div class="glare absolute top-0 left-0 w-full h-full opacity-0.6 bg-gradient-to-bl from-purple-300 to-transparent rounded-lg mix-blend-hard-light transition duration-100 ease-out"></div>
+          <div class="bottom-section bg-black w-full absolute bottom-0 left-0 py-16 text-center">
+              <div class="user-icon absolute top-[1%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-10">
+                  <img src="https://folsom-pulse.vercel.app/_next/image?url=https%3A%2F%2Ffolsom-pulse-media.s3.us-west-1.amazonaws.com%2F1703755008039-Frame-8.png&w=256&q=75" />
+                </div>
+                <div class="py-6">
+            <h1 class="name text-3xl ">Neighbourhood's Pick</h1>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
