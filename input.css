@@ -261,3 +261,61 @@ body {
   .buttons .message {
     margin: 0;
   }
+
+  
+@keyframes shiny {
+  0% {
+      background-color: #58EFEC;
+      box-shadow: 0 0 10px #FFCB02;
+  }
+
+  20%{
+      background-color: #0D41E1;
+      box-shadow: 0 0 10px #FFCB02;
+  }
+
+  40%{
+      background-color: #ee964b;
+      box-shadow: 0 0 10px #FFCB02;
+  }
+  50% {
+      background-color: #a5ffd6;
+      box-shadow: 0 0 10px #FFCB02;
+  }
+
+  70%{
+      background-color: #e500a4;
+      box-shadow: 0 0 10px #FFCB02;
+  }
+
+  90%{
+      background-color: #F2BF6C;
+      box-shadow: 0 0 10px #FFCB02;
+  }
+  100% {
+      background-color: #5CB270;
+      box-shadow: 0 0 10px #FFCB02;
+  }
+}
+
+.shiny-background {
+  animation: shiny 2s infinite;
+}
+
+
+
+
+.hologram-container {
+  perspective: 1000px;
+}
+
+.hologram-image {
+  width: 200px; /* Adjust as needed */
+  height: auto;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.hologram-image:hover {
+  transform: rotateY(15deg) rotateX(15deg) scale(1.1);
+}
